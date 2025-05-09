@@ -1,0 +1,215 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4f46e5;
+  padding: 10px 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav .logo {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background: #4338ca;
+}
+
+/* Home Page */
+.hero {
+  background: #4f46e5;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.cta-button {
+  background-color: #4338ca;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #5c53d6;
+}
+
+.features {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.features h2 {
+  font-size: 2rem;
+  color: #4f46e5;
+  margin-bottom: 20px;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feature i {
+  font-size: 2rem;
+  color: #4f46e5;
+}
+
+.cta {
+  background-color: #4338ca;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #5c53d6;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.cta-button:hover {
+  background-color: #4f46e5;
+}
+
+/* Login Box */
+.login-box {
+  width: 100%;
+  max-width: 380px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #4f46e5;
+}
+
+/* Form Fields */
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  border-color: #4f46e5;
+  outline: none;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #4338ca;
+  transform: scale(1.05);
+}
+
+button[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .login-box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .feature-cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .feature {
+    width: 80%;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+  }
+}
